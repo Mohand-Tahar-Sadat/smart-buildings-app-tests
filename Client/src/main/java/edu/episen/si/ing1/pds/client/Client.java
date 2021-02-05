@@ -22,6 +22,6 @@ public class Client {
         }
 
 
-        logger.info("Backend Service is running (testMode ={})", itestMode);
+        logger.info("Client server is running (testMode ={})", itestMode);
     }
 }
