@@ -22,13 +22,13 @@ public class BackendService {
 
         boolean itestMode = false;
         if (commandLine.hasOption("testMode"))
-            itestMode = true;
+        {itestMode = true;}
 
         int iMaxConnection = 10;
         if (commandLine.hasOption("maxConnection"))
-            iMaxConnection = Integer.parseInt(commandLine.getOptionValue("maxConnection"));
+        {iMaxConnection = Integer.parseInt(commandLine.getOptionValue("maxConnection"));}
 
-        logger.info("Backend Service is running (testMode = " + itestMode + ") , (maxconnection = " + iMaxConnection + "}.");
+        logger.info("Backend Service is running (testMode ={}),(maxConnection={})" ,itestMode,iMaxConnection);
 
     }
 }
